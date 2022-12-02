@@ -84,11 +84,13 @@ import advent.code.file.reader.FileReader
 object Main {
   def main(args: Array[String]): Unit = {
     val lines = FileReader.getLines("src/main/resources/day2/input")
+    // Part One
     val partOneLines = lines.map(string => {
       val array = string.split(" ").map(_.trim)
       ScoreCounter.countScore(HandShape(array.head), HandShape(array.tail.head))
     })
     println(partOneLines.sum)
+    // Part Two
     val partTwoLines = lines.map(string => {
       val array = string.split(" ").map(_.trim)
       ScoreCounter.countScore(HandShape(array.head), GameResult(array.tail.head))
