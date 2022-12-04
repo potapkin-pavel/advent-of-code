@@ -2,7 +2,7 @@ package advent.code.day1
 
 import advent.code.file.reader.FileReader
 
-  /*
+/*
   --- Day 1: Calorie Counting ---
 
   Santa's reindeer typically eat regular reindeer food, but they need a lot of
@@ -87,7 +87,7 @@ import advent.code.file.reader.FileReader
   Find the top three Elves carrying the most Calories. How many Calories are
   those Elves carrying in total?
 
-  */
+ */
 
 object Main {
 
