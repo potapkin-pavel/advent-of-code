@@ -9,4 +9,11 @@ object FileReader {
     bufferedSource.close
     lines
   }
+
+  def getListOfChars(path: String): List[Char] = {
+    val bufferedSource: BufferedSource = scala.io.Source.fromFile(path)
+    val listOfChars = bufferedSource.toList
+    bufferedSource.close
+    listOfChars
+  }
 }
